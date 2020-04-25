@@ -1,6 +1,6 @@
 ---
 - name: A simple play to ping a windows host
-  hosts: windows 
+  hosts: Windows 
 
   tasks:
 
