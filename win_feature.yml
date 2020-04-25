@@ -1,0 +1,10 @@
+---
+- name: A simple play to install IIS services on a Windows host
+  hosts: Windows 
+
+  tasks:
+
+    - name: Install IIS
+      win_feature:
+        name: Web Server
+        state: present
