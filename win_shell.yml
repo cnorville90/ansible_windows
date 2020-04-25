@@ -6,3 +6,8 @@
 
     - name: Show services
       win_shell: Get-Service
+      register: result
+
+    - name: dump out the result
+      debug:
+        var: register
