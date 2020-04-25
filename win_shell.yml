@@ -1,0 +1,8 @@
+---
+- name: A simple play to list the services on a Windows host
+  hosts: Windows 
+
+  tasks:
+
+    - name: Show services
+      win_shell: Get-Service
